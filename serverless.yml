@@ -33,7 +33,7 @@ provider:
 
 functions:
   registerStudents:
-    handler: register_batch/aws/index.registerStudents
+    handler: batch_record/aws/index.registerStudents
     events:
       - s3: 
           bucket: students-csv
@@ -42,7 +42,7 @@ functions:
             - suffix: .csv
 
   simulatingCSVUpload:
-    handler: register_batch/local/index.simulatingCSVUpload
+    handler: batch_record/local/index.simulatingCSVUpload
     events:
       - httpApi:
           path: /students/batch
@@ -50,7 +50,7 @@ functions:
     enabled: false
 
   registerStudentsFromLocalBucket:
-    handler: register_batch/local/index.registerStudentsFromLocalBucket
+    handler: batch_record/local/index.registerStudentsFromLocalBucket
     events:
       - s3: 
           bucket: students-csv-local

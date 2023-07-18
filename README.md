@@ -108,6 +108,7 @@ aws_secret_access_key = YOUR-SECRET-KEY
 - `sls plugin install --name serverless-offline@12.0.4`
 - `sls plugin install --name serverless-s3-local@0.7.1` (Uses https://www.npmjs.com/package/s3rver in background)
 - `sls offline`
+- `POST http://localhost:3000/students/batch`
 
 #### Deploy
 - `sls plugin install --name serverless-disable-functions@1.0.0`
