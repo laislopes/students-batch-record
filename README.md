@@ -92,9 +92,25 @@ aws_secret_access_key = YOUR-SECRET-KEY
 
 > More information about [AWS CLI Credentials](https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-configure-files.html)
 
-## Setup
+## Setup 
 
-- `npm i -g serverless@3.29.0`
+- `npm install`
+- `npm install -g serverless@3.29.0`
+- `sls -v`
+
+#### Creatting a new Serverless Framework App
+![Creatting a new Serverless Framework App](./assets/sls.jpg)
+
+#### Logging into the Serverlerss Dashboard
+![Access and Secret Key](./assets/sls-login.png)
+
+#### Using Local S3 Bucket
+- `sls plugin install --name serverless-offline@12.0.4`
+- `sls plugin install --name serverless-s3-local@0.7.1` (Uses https://www.npmjs.com/package/s3rver in background)
+- `sls offline`
+
+#### Deploy
+- `sls plugin install --name serverless-disable-functions@1.0.0`
 
 ## Additional Documentation
 
