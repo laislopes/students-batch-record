@@ -5,7 +5,7 @@ frameworkVersion: '3'
 
 resources:
   extensions:
-    S3BucketStudentscsv:
+    S3BucketStudentscsvbatch:
       Properties:
         CorsConfiguration:
           CorsRules:
@@ -22,13 +22,11 @@ params:
   dev:
     apiBaseUrl: http://localhost:3003
   prod:
+    apiBaseUrl: http://ec2-18-230-184-190.sa-east-1.compute.amazonaws.com:3000
 
 provider:
   name: aws
   runtime: nodejs18.x
-  region: sa-east-1
-  environment:
-    API_BASE_URL: ${param:apiBaseUrl}
   iam: 
     role:
       statements:
@@ -36,14 +34,17 @@ provider:
           Action:
             - s3:GetObject
           Resource:
-            - arn:aws:s3:::students-csv/*
+            - arn:aws:s3:::students-csv-batch/*
+  environment:
+    API_BASE_URL: ${param:apiBaseUrl}
+  
 
 functions:
   registerStudents:
     handler: batch_record/aws/index.registerStudents
     events:
       - s3: 
-          bucket: students-csv
+          bucket: students-csv-batch
           event: s3:ObjectCreated:*
           rules: 
             - suffix: .csv
