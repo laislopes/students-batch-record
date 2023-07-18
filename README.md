@@ -112,6 +112,7 @@ aws_secret_access_key = YOUR-SECRET-KEY
 
 #### Deploy
 - `sls plugin install --name serverless-disable-functions@1.0.0`
+- `sls deploy --stage=prod --org=yourOrganizationName`
 
 ## Additional Documentation
 

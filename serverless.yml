@@ -18,10 +18,17 @@ resources:
                 - "*"
               AllowedHeaders:
                 - "*"
-            
+params:
+  dev:
+    apiBaseUrl: http://localhost:3003
+  prod:
+
 provider:
   name: aws
   runtime: nodejs18.x
+  region: sa-east-1
+  environment:
+    API_BASE_URL: ${param:apiBaseUrl}
   iam: 
     role:
       statements:
