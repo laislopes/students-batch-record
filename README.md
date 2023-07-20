@@ -114,6 +114,9 @@ aws_secret_access_key = YOUR-SECRET-KEY
 - `sls plugin install --name serverless-disable-functions@1.0.0`
 - `sls deploy --stage=prod --org=yourOrganizationName`
 
+#### Removing the deployed service
+- `sls remove --stage=prod --org=yourOrganizationName`
+
 ## Additional Documentation
 
 - [WSL](https://github.com/codeedu/wsl2-docker-quickstart#dica-para-windows-11)
