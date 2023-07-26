@@ -22,7 +22,7 @@ params:
   dev:
     apiBaseUrl: http://localhost:3003
   prod:
-    apiBaseUrl: http://ec2-18-230-184-190.sa-east-1.compute.amazonaws.com:3000
+    apiBaseUrl: http://localhost:3003
 
 provider:
   name: aws
