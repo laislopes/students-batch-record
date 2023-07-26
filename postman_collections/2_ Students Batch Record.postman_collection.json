@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "5a675cd8-caa8-4faa-9f8a-a4ae9ec10fa6",
+		"name": "2_ Students Batch Record",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4568052"
+	},
+	"item": [
+		{
+			"name": "Batch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{students-batch-record}}/{{students-api}}/{{batch}}",
+					"host": [
+						"{{students-batch-record}}"
+					],
+					"path": [
+						"{{students-api}}",
+						"{{batch}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
