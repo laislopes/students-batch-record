@@ -98,8 +98,8 @@ aws_secret_access_key = YOUR-SECRET-KEY
 - `npm install -g serverless@3.29.0`
 - `sls -v`
 
-#### Creatting a new Serverless Framework App
-![Creatting a new Serverless Framework App](./assets/sls.jpg)
+#### Creating a new Serverless Framework App
+![Creating a new Serverless Framework App](./assets/sls.jpg)
 
 #### Logging into the Serverlerss Dashboard
 ![Access and Secret Key](./assets/sls-login.png)
@@ -122,5 +122,5 @@ aws_secret_access_key = YOUR-SECRET-KEY
 - [WSL](https://github.com/codeedu/wsl2-docker-quickstart#dica-para-windows-11)
 - [asdf](https://asdf-vm.com/guide/getting-started.html)
 - [AWS Register](https://docs.aws.amazon.com/pt_br/cli/latest/userguide/getting-started-prereqs.html#getting-started-prereqs-signup).
-- [Creatting IAM Account](https://docs.aws.amazon.com/pt_br/cli/latest/userguide/getting-started-prereqs.html#getting-started-prereqs-iam).
+- [Creating IAM Account](https://docs.aws.amazon.com/pt_br/cli/latest/userguide/getting-started-prereqs.html#getting-started-prereqs-iam).
 - [Access Keys](https://docs.aws.amazon.com/pt_br/cli/latest/userguide/getting-started-prereqs.html#getting-started-prereqs-keys).
